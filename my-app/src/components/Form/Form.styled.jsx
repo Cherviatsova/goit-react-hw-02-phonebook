@@ -1,5 +1,18 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+    margin-bottom: 15px;
+`
+
+export const ContactForm = styled.form`
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid black;
+`
+
 export const Label = styled.label`
     font-weight: 500;
     font-size: 20px;
