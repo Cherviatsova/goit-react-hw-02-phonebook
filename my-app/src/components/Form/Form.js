@@ -9,6 +9,10 @@ import {
 import PropTypes from "prop-types";
 
 class Form extends Component {
+  static propTypes = {
+    onAddContact: PropTypes.func.isRequired,
+  };
+
   state = {
     name: "",
     number: "",
@@ -64,6 +68,6 @@ class Form extends Component {
   }
 }
 
-Form.propTypes = { onAddContact: PropTypes.func.isRequired };
+// Form.propTypes = { onAddContact: PropTypes.func.isRequired };
 
 export default Form;
